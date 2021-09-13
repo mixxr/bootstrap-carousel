@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Static Frontend file Mike</title>
+    <meta name="template" content="page-content"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/etc.clientlibs/my-site-bootstrap/clientlibs/clientlib-base.css" type="text/css">
+    <script type="text/javascript" src="/etc.clientlibs/my-site-bootstrap/clientlibs/clientlib-dependencies.js"></script>
+    <link rel="stylesheet" href="/etc.clientlibs/my-site-bootstrap/clientlibs/clientlib-dependencies.css" type="text/css">
+</head>
+<body class="page basicpage">
+<div class="root container responsivegrid">
+    <div class="cmp-container">
+        <header class="experiencefragment">
+            <div class="cmp-experiencefragment">
+                <div class="cmp-container">
+                    <div class="navigation">
+                        <nav class="cmp-navigation" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <ul class="cmp-navigation__group">
+                                <li class="cmp-navigation__item cmp-navigation__item--level-0 cmp-navigation__item--active">
+                                    <a href="/content/my-site-bootstrap/us/en.html" title="SiteBS" aria-current="page" class="cmp-navigation__item-link">SiteBS</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="languagenavigation">
+                        <nav class="cmp-languagenavigation">
+                            <ul class="cmp-languagenavigation__group">
+                                <li class="cmp-languagenavigation__item cmp-languagenavigation__item--langcode-en cmp-languagenavigation__item--level-0">
+                                    <span class="cmp-languagenavigation__item-title" lang="en">United States</span>
+                                    <ul class="cmp-languagenavigation__group">
+                                        <li class="cmp-languagenavigation__item cmp-languagenavigation__item--langcode-en cmp-languagenavigation__item--level-1">
+                                            <a class="cmp-languagenavigation__item-link" href="/content/my-site-bootstrap/us/en.html" hreflang="en" lang="en" rel="alternate" title="English">English</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="search">
+                        <section class="cmp-search" role="search" data-cmp-is="search" data-cmp-min-length="3" data-cmp-results-size="10">
+                            <form class="cmp-search__form" data-cmp-hook-search="form" method="get" action="/content/my-site-bootstrap/us/en.searchresults.json/_jcr_content/root/search" autocomplete="off">
+                                <div class="cmp-search__field">
+                                    <i class="cmp-search__icon" data-cmp-hook-search="icon"></i>
+                                    <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
+                                    <input class="cmp-search__input" data-cmp-hook-search="input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false"/>
+                                    <button class="cmp-search__clear" data-cmp-hook-search="clear">
+                                        <i class="cmp-search__clear-icon"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="cmp-search__results" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false"></div>
+                            <script data-cmp-hook-search="itemTemplate" type="x-template">
+                                <a class="cmp-search__item" data-cmp-hook-search="item">
+                                    <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
+                                </a>
+                            </script>
+                        </section></div>
+                </div>
+            </div>
+        </header>
+        <main class="container responsivegrid">
+            <div class="cmp-container">
+                <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+                    <div class="title aem-GridColumn aem-GridColumn--default--12">
+                        <div class="cmp-title">
+                            <h1 class="cmp-title__text">Welcome to SiteBS!</h1>
+                        </div>
+                    </div>
+                    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+                        <div class="cmp-container">
+                            <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+                                <div class="text aem-GridColumn aem-GridColumn--default--12">
+                                    <div class="cmp-text">
+                                        <p>This is the main welcome page of your web site. A few notes about this site:</p>
+                                        <ul>
+                                            <li>It is built entirely with the Core Components - see the <a href="https://www.adobe.com/go/aem_cmp_library">Component Library</a> to view the components in all their shapes and forms.</li>
+                                            <li>Only the Hello World component has been built custom to illustrate how further components can be built (which also shows how JavaScript is best initialized for components, so that it also works well with the Page Editor).</li>
+                                            <li>The page header and footer are assembled as Experience Fragments, which <a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html#localized-site-structure">can also be localized if needed</a>.<br />
+                                            </li>
+                                            <li>The Style System is used to insert a sematic &lt;header&gt; and &lt;footer&gt; element to the corresponding Experience Fragment components, as well as a &lt;main&gt; element to the container of the page content. This allows to apply some CSS specifically to these sections of the page.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="helloworld aem-GridColumn aem-GridColumn--default--12"><div class="cmp-helloworld" data-cmp-is="helloworld">
+                                    <h2 class="cmp-helloworld__title">Hello World Component</h2>
+                                    <div class="cmp-helloworld__item">
+                                        <p class="cmp-helloworld__item-label">Model message:</p>
+                                        <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="model">Hello World!
+Resource type is: my-site-bootstrap/components/helloworld
+Current page is:  /content/my-site-bootstrap/us/en
+This is instance: 78f60b4a-a52a-4021-82d5-fb17f5fb95cf
+</pre>
+                                    </div>
+                                </div></div>
+                                <div>
+                                    <p>Bootstrap v5 test</p>
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <br>
+                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="https://picsum.photos/seed/picsum1/300/200" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="https://picsum.photos/seed/picsum2/300/200" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="https://picsum.photos/seed/picsum3/300/200" class="d-block w-100" alt="...">
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <hr>
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="https://picsum.photos/seed/picsum3/300/200" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://picsum.photos/seed/picsum2/300/200" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://picsum.photos/seed/picsum1/300/200" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                                  <hr>
+                                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="https://picsum.photos/seed/picsum1/300/200" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://picsum.photos/seed/picsum2/300/200" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://picsum.photos/seed/picsum3/300/200" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="experiencefragment">
+            <div class="cmp-experiencefragment">
+                <div class="cmp-container">
+                    <div class="separator">
+                        <div class="cmp-separator">
+                            <hr class="cmp-separator__horizontal-rule"/>
+                        </div></div>
+                    <div class="text">
+                        <div class="cmp-text">
+                            <p>Copyright 2019, SiteBS. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script type="text/javascript" src="/etc.clientlibs/my-site-bootstrap/clientlibs/clientlib-site.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/my-site-bootstrap/clientlibs/clientlib-base.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

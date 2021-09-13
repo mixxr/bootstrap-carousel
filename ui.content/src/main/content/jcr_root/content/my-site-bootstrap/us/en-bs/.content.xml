@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-09-08T15:57:30.238+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/my-site-bootstrap/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="en BS"
+        sling:resourceType="my-site-bootstrap/components/page"
+        pageTitle="SiteBS">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="my-site-bootstrap/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="my-site-bootstrap/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="my-site-bootstrap/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="my-site-bootstrap/components/container"
+                    layout="responsiveGrid">
+                    <teaser
+                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Epic Journey"
+                        sling:resourceType="my-site-bootstrap/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser>
+                    <teaser_copy
+                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Epic Journey"
+                        sling:resourceType="my-site-bootstrap/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser_copy>
+                    <teaser_copy_1579324932
+                        jcr:description="&lt;p>Don't stop half way, go for the top!&lt;/p>&#xd;&#xa;"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Epic Journey"
+                        sling:resourceType="my-site-bootstrap/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser_copy_1579324932>
+                    <helloworld
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="my-site-bootstrap/components/helloworld"
+                        text="content to edit">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="5"/>
+                        </cq:responsive>
+                    </helloworld>
+                    <button
+                        jcr:created="{Date}2021-09-08T11:49:55.659+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-08T11:50:20.178+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Button Primary"
+                        sling:resourceType="my-site-bootstrap/components/button"
+                        accessibilityLabel="primario per test BS"/>
+                    <carouselbs
+                        jcr:created="{Date}2021-09-08T15:12:00.838+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-08T15:12:30.707+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="my-site-bootstrap/components/carouselbs"
+                        autopauseDisabled="false"
+                        autoplay="false"
+                        delay="5000">
+                        <image
+                            cq:panelTitle="i1"
+                            jcr:created="{Date}2021-09-08T15:12:07.365+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-09-08T15:18:51.088+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="my-site-bootstrap/components/image"
+                            altValueFromDAM="true"
+                            displayPopupTitle="true"
+                            fileReference="/content/dam/budrio/highlight-contatti-lg.jpg"
+                            isDecorative="false"
+                            titleValueFromDAM="true"/>
+                        <item_1631106744836
+                            cq:panelTitle="i2"
+                            jcr:lastModified="{Date}2021-09-08T15:19:03.448+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="my-site-bootstrap/components/image"
+                            fileReference="/content/dam/budrio/homepage-paziente-card-protesico-lg.jpg"/>
+                    </carousel>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
