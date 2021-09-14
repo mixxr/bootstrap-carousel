@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="fd119318-83fd-4fd7-9151-a8db554ed5cb">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2021-09-14T15:44:31.504+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}32"
+            dam:Comments="XML:com.adobe.xmp: &lt;x:xmpmeta xmlns:x=&quot;adobe:ns:meta/&quot; x:xmptk=&quot;XMP Core 6.0.0&quot;>&#xa;   &lt;rdf:RDF xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;>&#xa;      &lt;rdf:Description rdf:about=&quot;&quot;&#xa;            xmlns:exif=&quot;http://ns.adobe.com/exif/1.0/&quot;>&#xa;         &lt;exif:PixelYDimension>866&lt;/exif:PixelYDimension>&#xa;         &lt;exif:PixelXDimension>1550&lt;/exif:PixelXDimension>&#xa;         &lt;exif:UserComment>Screenshot&lt;/exif:UserComment>&#xa;      &lt;/rdf:Description>&#xa;   &lt;/rdf:RDF>&#xa;&lt;/x:xmpmeta>&#xa;&#xa;"
+            dam:extracted="{Date}2021-09-14T15:44:29.905+02:00"
+            dam:Fileformat="PNG"
+            dam:MIMEtype="image/png"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}1"
+            dam:Physicalheightindpi="{Long}144"
+            dam:Physicalheightininches="{Decimal}6.014197826385498"
+            dam:Physicalwidthindpi="{Long}144"
+            dam:Physicalwidthininches="{Decimal}10.764442443847656"
+            dam:Progressive="no"
+            dam:sha1="1e11cf914988dd39dde6d19167efa7b4ca9e1e07"
+            dam:size="{Long}382140"
+            dc:format="image/png"
+            exif:PixelXDimension="{Long}1550"
+            exif:PixelYDimension="{Long}866"
+            exif:UserComment="[Screenshot]"
+            exif:UserComment_xmpArrayType="rdf:Alt"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}866"
+            tiff:ImageWidth="{Long}1550"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

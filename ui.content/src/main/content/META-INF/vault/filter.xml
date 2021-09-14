@@ -2,6 +2,6 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/my-site-bootstrap" mode="merge"/>
     <filter root="/content/my-site-bootstrap" mode="merge"/>
-    <filter root="/content/dam/my-site-bootstrap/asset.jpg" mode="merge"/>
+    <filter root="/content/dam/my-site-bootstrap" mode="merge"/>
     <filter root="/content/experience-fragments/my-site-bootstrap" mode="merge"/>
 </workspaceFilter>
