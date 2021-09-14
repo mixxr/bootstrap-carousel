@@ -16,7 +16,7 @@
 (function(channel) {
     "use strict";
 
-    console.log("================> cmp-carousel BS");
+    console.log("================> cmp-carouselbs panel init...");
 
     channel.on("cq-editor-loaded", function(event) {
         if (window.CQ && window.CQ.CoreComponents && window.CQ.CoreComponents.panelcontainer &&

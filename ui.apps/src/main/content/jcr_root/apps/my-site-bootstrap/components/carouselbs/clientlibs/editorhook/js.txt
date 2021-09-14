@@ -16,8 +16,5 @@
 
 #base=js
 
-
-// including carousel here does not work: data-cmp-is is already removed
-//carousel.js
 panelcontainer.js
 

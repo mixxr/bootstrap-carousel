@@ -702,6 +702,6 @@
         document.addEventListener("DOMContentLoaded", onDocumentReady);
     }
 
-    console.log("===> JS Carousel BS (site)");
+    console.log("===> JS Carousel BS (hook)");
 
 }());

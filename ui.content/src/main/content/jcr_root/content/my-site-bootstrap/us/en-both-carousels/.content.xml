@@ -4,13 +4,16 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-09-08T15:19:03.458+02:00"
+        cq:lastModified="{Date}2021-09-14T09:41:41.182+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/my-site-bootstrap/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="en"
+        jcr:title="en BS and CC carousels"
         sling:resourceType="my-site-bootstrap/components/page"
-        pageTitle="SiteBS">
+        pageTitle="SiteBS"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="my-site-bootstrap/components/container"
@@ -93,36 +96,68 @@
                         jcr:title="Button Primary"
                         sling:resourceType="my-site-bootstrap/components/button"
                         accessibilityLabel="primario per test BS"/>
-                    <carousel
+                    <carouselbs
                         jcr:created="{Date}2021-09-08T15:12:00.838+02:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-09-08T15:12:30.707+02:00"
+                        jcr:lastModified="{Date}2021-09-14T09:41:41.167+02:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="my-site-bootstrap/components/carousel"
+                        sling:resourceType="my-site-bootstrap/components/carouselbs"
                         autopauseDisabled="false"
-                        autoplay="false"
-                        delay="5000">
+                        autoplay="true"
+                        delay="3000">
                         <image
                             cq:panelTitle="i1"
                             jcr:created="{Date}2021-09-08T15:12:07.365+02:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2021-09-08T15:18:51.088+02:00"
+                            jcr:lastModified="{Date}2021-09-14T09:35:51.883+02:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="my-site-bootstrap/components/image"
                             altValueFromDAM="true"
                             displayPopupTitle="true"
-                            fileReference="/content/dam/budrio/highlight-contatti-lg.jpg"
+                            fileReference="/content/dam/my-site-bootstrap/slide1.png"
                             isDecorative="false"
                             titleValueFromDAM="true"/>
                         <item_1631106744836
                             cq:panelTitle="i2"
-                            jcr:lastModified="{Date}2021-09-08T15:19:03.448+02:00"
+                            jcr:lastModified="{Date}2021-09-14T09:35:57.205+02:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="my-site-bootstrap/components/image"
-                            fileReference="/content/dam/budrio/homepage-paziente-card-protesico-lg.jpg"/>
+                            fileReference="/content/dam/my-site-bootstrap/slide2.png"/>
+                        <item_1631604973484
+                            cq:panelTitle="i3"
+                            jcr:lastModified="{Date}2021-09-14T09:37:56.089+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="my-site-bootstrap/components/image"
+                            fileReference="/content/dam/my-site-bootstrap/slide3.png"/>
+                    </carouselbs>
+                    <carousel
+                        jcr:created="{Date}2021-09-14T09:39:21.349+02:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-09-14T09:40:47.522+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="my-site-bootstrap/components/carousel"
+                        autopauseDisabled="false"
+                        autoplay="true"
+                        delay="1000">
+                        <item_1631605170860
+                            cq:panelTitle="i1"
+                            jcr:lastModified="{Date}2021-09-14T09:39:49.532+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="my-site-bootstrap/components/image"
+                            fileReference="/content/dam/my-site-bootstrap/slide1.png"/>
+                        <item_1631605176576
+                            cq:panelTitle="i2"
+                            jcr:lastModified="{Date}2021-09-14T09:39:58.621+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="my-site-bootstrap/components/image"
+                            fileReference="/content/dam/my-site-bootstrap/slide2.png"/>
                     </carousel>
                 </container>
             </container>
