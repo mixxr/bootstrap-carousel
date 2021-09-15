@@ -1,7 +1,13 @@
-# Sample AEM project template
+# Bootstrap Carousel Sample Customization
 
 This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This project shows a component named `carouselbs` based on the Core Carousel. The new component will use the Bootstrap Carousel and it can co-exists with the Core Carousel.
 
+## How to use the CarouselBS component
+If you want to use the component in your project, then:
+* include css lientlibs in your page header (see components/page for details)
+* include js clientlibs in your page footer (see components/page for details)
+* include the clientlib `bootstrap.components.carousel` in your `base` clientlib or equivalent
 ## Modules
 
 The main parts of the template are:
