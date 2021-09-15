@@ -17,10 +17,12 @@
     aria-atomic="false" aria-live="${carousel.autoplay ? 'off' : 'polite'}">
 
     <!--/* BS indicators /*-->
-    <div class="carousel-indicators">
+    <div class="carousel-indicators" role="tablist" aria-label="${'Choose a slide to display' @ i18n}"
+      data-cmp-hook-carouselbs="indicators">
       <button data-sly-repeat.item="${carousel.items}" type="button" data-bs-target="#${carousel.id}"
         data-bs-slide-to="${itemList.index}" class="${itemList.first ? 'active' : ''}" aria-current="true"
-        aria-label="${'Slide {0} of {1}' @ format=[itemList.count, carousel.items.size], i18n}"></button>
+        aria-label="${'Slide {0} of {1}' @ format=[itemList.count, carousel.items.size], i18n}"
+        aria-controls="${item.id}-tabpanel" role="tab" data-cmp-hook-carouselbs="indicator" ></button>
     </div>
 
     <div data-sly-repeat.item="${carousel.items}"
@@ -30,13 +32,6 @@
       aria-label="${'Slide {0} of {1}' @ format=[itemList.count, carousel.items.size], i18n}"
       data-cmp-data-layer="${item.data.json}" data-cmp-hook-carouselbs="item">
     </div>
-    <ol class="cmp-carouselbs__indicators" role="tablist" aria-label="${'Choose a slide to display' @ i18n}"
-      data-cmp-hook-carouselbs="indicators">
-      <li data-sly-repeat.item="${carousel.items}" id="${item.id}-tab"
-        class="cmp-carouselbs__indicator${itemList.first ? ' cmp-carouselbs__indicator--active' : ''}" role="tab"
-        aria-controls="${item.id}-tabpanel" aria-label="${'Slide {0}' @ format=[itemList.count], i18n}"
-        data-cmp-hook-carouselbs="indicator">${item.title}</li>
-    </ol>
   </div>
 
   <!--/* BS Controls /*-->

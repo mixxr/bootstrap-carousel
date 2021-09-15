@@ -109,7 +109,6 @@
          */
         function init(config) {
             // prevents multiple initialization
-            console.log("--> carousel BS working with:",config.element);
             config.element.removeAttribute("data-" + NS + "-is");
 
             setupProperties(config.options);
@@ -126,7 +125,6 @@
             }
 
             // TODO: This section is only relevant in edit mode and should move to the editor clientLib
-            console.log("--> carousel BS mesg handling");
             if (window.Granite && window.Granite.author && window.Granite.author.MessageChannel) {
                 /*
                  * Editor message handling:
@@ -139,7 +137,6 @@
                 window.CQ.CoreComponents.MESSAGE_CHANNEL = window.CQ.CoreComponents.MESSAGE_CHANNEL || new window.Granite.author.MessageChannel("cqauthor", window);
                 window.CQ.CoreComponents.MESSAGE_CHANNEL.subscribeRequestMessage("cmp.panelcontainer", function(message) {
                     if (message.data && message.data.type === "cmp-carouselbs" && message.data.id === that._elements.self.dataset["cmpPanelcontainerId"]) {
-                        console.log("--> carousel BS message.data:",message.data);
                         if (message.data.operation === "navigate") {
                             navigate(message.data.index);
                         }
@@ -215,7 +212,6 @@
          * @private
          */
         function bindEvents() {
-            console.log("--> carousel BS: bind events");
             if (that._elements["previous"]) {
                 that._elements["previous"].addEventListener("click", function() {
                     var index = getPreviousIndex();
@@ -247,7 +243,6 @@
             }
 
             var indicators = that._elements["indicator"];
-            console.log("--> carousel BS indicators:",indicators);
             if (indicators) {
                 for (var i = 0; i < indicators.length; i++) {
                     (function(index) {
@@ -279,7 +274,6 @@
 
             // for accessibility we pause animation when a element get focused
             var items = that._elements["item"];
-            console.log("--> carousel BS items:",items);
             if (items) {
                 for (var j = 0; j < items.length; j++) {
                     items[j].addEventListener("focusin", onMouseEnter);
@@ -440,28 +434,23 @@
                 if (Array.isArray(items)) {
                     for (var i = 0; i < items.length; i++) {
                         if (i === parseInt(that._active)) {
-                            //items[i].classList.add("cmp-carouselbs__item--active");
                             items[i].classList.add("active"); // BS class
                             items[i].removeAttribute("aria-hidden");
-                            indicators[i].classList.add("cmp-carouselbs__indicator--active");
-                            //indicators[i].classList.add("active"); // BS class
+                            indicators[i].classList.add("active"); // BS class
                             indicators[i].setAttribute("aria-selected", true);
                             indicators[i].setAttribute("tabindex", "0");
                         } else {
-                            //items[i].classList.remove("cmp-carouselbs__item--active");
                             items[i].classList.remove("active"); // BS class
                             items[i].setAttribute("aria-hidden", true);
-                            indicators[i].classList.remove("cmp-carouselbs__indicator--active");
-                            //indicators[i].classList.remove("active"); // BS class
+                            indicators[i].classList.remove("active"); // BS class
                             indicators[i].setAttribute("aria-selected", false);
                             indicators[i].setAttribute("tabindex", "-1");
                         }
                     }
                 } else {
                     // only one item
-                    //items.classList.add("cmp-carouselbs__item--active");
                     items.classList.add("active"); // BS class
-                    indicators.classList.add("cmp-carouselbs__indicator--active");
+                    indicators.classList.add("active");
                 }
             }
         }
@@ -505,7 +494,6 @@
          * @param {Number} index The index of the item to navigate to
          */
         function navigate(index) {
-            console.log("--> carousel BS: navigate");
             if (index < 0 || index > (that._elements["item"].length - 1)) {
                 return;
             }
@@ -701,7 +689,5 @@
     } else {
         document.addEventListener("DOMContentLoaded", onDocumentReady);
     }
-
-    console.log("===> JS Carousel BS (hook)");
 
 }());
