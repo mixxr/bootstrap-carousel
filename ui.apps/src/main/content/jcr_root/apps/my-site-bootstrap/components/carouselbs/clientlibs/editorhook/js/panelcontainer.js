@@ -16,8 +16,6 @@
 (function(channel) {
     "use strict";
 
-    console.log("================> cmp-carouselbs panel init...");
-
     channel.on("cq-editor-loaded", function(event) {
         if (window.CQ && window.CQ.CoreComponents && window.CQ.CoreComponents.panelcontainer &&
             window.CQ.CoreComponents.panelcontainer.v1 && window.CQ.CoreComponents.panelcontainer.v1.registry) {
